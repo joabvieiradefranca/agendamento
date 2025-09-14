@@ -1,0 +1,74 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #fff;
+    color: #333;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #ff6600;
+    padding: 10px 20px;
+    color: #fff;
+    font-weight: bold;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+.sidebar {
+    width: 200px;
+    background: #ff6600;
+    padding: 20px 0;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin: 15px 0;
+}
+
+.sidebar ul li a {
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 15px;
+    display: block;
+}
+
+.sidebar ul li a.active,
+.sidebar ul li a:hover {
+    background: #ff944d;
+    border-radius: 5px;
+}
+
+.content {
+    flex: 1;
+    padding: 20px;
+}
+
+.overview .card {
+    border: 1px solid #ff6600;
+    padding: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.appointments table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.appointments table th,
+.appointments table td {
+    border: 1px solid #ff6600;
+    padding: 10px;
+    text-align: left;
+}

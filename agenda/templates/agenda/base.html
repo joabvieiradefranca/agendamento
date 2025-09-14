@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Sistema de Agendamento{% endblock %}</title>
+    <link rel="stylesheet" href="{% static 'agenda/css/style.css' %}">
+
+</head>
+<body>
+    <header class="header">
+        <div class="logo">Sistema de Agendamento</div>
+        <div class="user-info">
+            <span>Admin</span>
+        </div>
+    </header>
+
+    <div class="container">
+        <aside class="sidebar">
+            <ul>
+                <li><a href="#" class="active">🏠 Dashboard</a></li>
+                <li><a href="#">👤 Clientes</a></li>
+                <li><a href="#">📅 Agendamentos</a></li>
+                <li><a href="#">⚙️ Admin</a></li>
+            </ul>
+        </aside>
+
+        <main class="content">
+            {% block content %}{% endblock %}
+        </main>
+    </div>
+</body>
+</html>

@@ -1,0 +1,42 @@
+{% extends 'agenda/base.html' %}
+
+{% block title %}Dashboard - Sistema de Agendamento{% endblock %}
+
+{% block content %}
+<h1>Dashboard</h1>
+
+<section class="overview">
+    <div class="card">
+        <p>Agendamentos de hoje</p>
+        <h2>{{ total_agendamentos_hoje }}</h2>
+    </div>
+</section>
+
+<section class="appointments">
+    <h2>Agendamentos</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Cliente</th>
+                <th>Data</th>
+                <th>Hora</th>
+                <th>Motivo</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for ag in agendamentos %}
+            <tr>
+                <td>{{ ag.cliente.nome }}</td>
+                <td>{{ ag.data|date:"d/m/Y" }}</td>
+                <td>{{ ag.hora|time:"H:i" }}</td>
+                <td>{{ ag.motivo }}</td>
+            </tr>
+            {% empty %}
+            <tr>
+                <td colspan="4">Nenhum agendamento encontrado</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</section>
+{% endblock %}
