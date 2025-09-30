@@ -9,7 +9,8 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: #ff6600;
+    /*background: #ff6600;*/
+    background: #FF5C04;
     padding: 10px 20px;
     color: #fff;
     font-weight: bold;
@@ -22,7 +23,7 @@ body {
 
 .sidebar {
     width: 200px;
-    background: #ff6600;
+    background: #FF5C04;
     padding: 20px 0;
 }
 
@@ -54,7 +55,7 @@ body {
 }
 
 .overview .card {
-    border: 1px solid #ff6600;
+    border: 1px solid #FF5C04;
     padding: 20px;
     margin-bottom: 20px;
     text-align: center;
@@ -68,7 +69,7 @@ body {
 
 .appointments table th,
 .appointments table td {
-    border: 1px solid #ff6600;
+    border: 1px solid #FF5C04;
     padding: 10px;
     text-align: left;
 }
